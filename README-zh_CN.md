@@ -28,7 +28,7 @@
 2. 打开Chrome浏览器，进入插件管理页：[chrome://extensions](chrome://extensions)
 3. 打开**开发者模式**，把插件文件拖入即可
 
-[!alt open dev mode](https://raw.githubusercontent.com/fractal-platform/pihsiu/master/docs/open_dev_mode.png)
+![alt open_dev_mode](https://raw.githubusercontent.com/fractal-platform/pihsiu/master/docs/open_dev_mode.png)
 
 ## 🖥 使用
 

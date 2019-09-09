@@ -26,7 +26,7 @@ The goal of Pihsiu is to make it as easy as possible to talk with Fractal.
 2. Open your Chrome Browser and goto [chrome://extensions](chrome://extensions)
 3. Open **development mode** and drag and drop the .crx file into.
 
-[!alt open dev mode](https://raw.githubusercontent.com/fractal-platform/pihsiu/master/docs/open_dev_mode.png)
+![alt open_dev_mode](https://raw.githubusercontent.com/fractal-platform/pihsiu/master/docs/open_dev_mode.png)
 
 ## 🖥 Usage
 
