@@ -24,11 +24,21 @@
 
 ## 📦 安装
 
+### 开发版
+
 1. 下载插件 [这里](https://github.com/fractal-platform/pihsiu/releases)
 2. 打开Chrome浏览器，进入插件管理页：[chrome://extensions](chrome://extensions)
 3. 打开**开发者模式**，把插件文件拖入即可
 
 ![alt open_dev_mode](https://raw.githubusercontent.com/fractal-platform/pihsiu/master/docs/open_dev_mode.png)
+
+### F&Q
+
+#### 1. 如果你遇到`Package is invalid: "CRX_REQUIRED_PROOF_MISSING"`类似的问题
+
+删除貔貅插件，彻底关掉Chrome进程，重新上面的开发版安装过程。这是由于Chrome76版本后引入的安全限制引起。
+
+或者你可以下载插件的zip包使用解压缩工具解压，使用chrome://extensions 中的`加载已解压的扩展程序`按钮加载。
 
 ## 🖥 使用
 
