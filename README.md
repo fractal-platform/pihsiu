@@ -22,11 +22,23 @@ The goal of Pihsiu is to make it as easy as possible to talk with Fractal.
 
 ## 📦 Install
 
+### Dev Version
+
 1. Get chrome extension [here](https://github.com/fractal-platform/pihsiu/releases)
 2. Open your Chrome Browser and goto [chrome://extensions](chrome://extensions)
 3. Open **development mode** and drag and drop the .crx file into.
 
 ![alt open_dev_mode](https://raw.githubusercontent.com/fractal-platform/pihsiu/master/docs/open_dev_mode.png)
+
+### F&Q
+
+#### 1. If you got `Package is invalid: "CRX_REQUIRED_PROOF_MISSING"` problem while install dev version:
+
+try these steps several times:
+
+* Remove Pihsiu add-on in Chrome
+* Close chrome ( Make sure all chrome process has quit already )
+* Start chrome, and go into chrome://extensions, reopen development mode and drag crx to chrome.
 
 ## 🖥 Usage
 
