@@ -22,11 +22,15 @@ The goal of Pihsiu is to make it as easy as possible to talk with Fractal.
 
 ## 📦 Install
 
+### Released Version
+
+* for [chrome browser](https://chrome.google.com/webstore/detail/pihsiu/lbfkjikmajfblaomhgdbdombjkgaeico)
+
 ### Dev Version
 
-1. Get chrome extension [here](https://github.com/fractal-platform/pihsiu/releases)
+1. Get chrome extension [here](https://github.com/fractal-platform/pihsiu/releases), download the zip file.
 2. Open your Chrome Browser and goto [chrome://extensions](chrome://extensions)
-3. Open **development mode** and drag and drop the .crx file into.
+3. Open **development mode** and unzip the extension.zip file, click **Load unpacked** and select the unzipped folder.
 
 ![alt open_dev_mode](https://raw.githubusercontent.com/fractal-platform/pihsiu/master/docs/open_dev_mode.png)
 

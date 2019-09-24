@@ -24,11 +24,15 @@
 
 ## 📦 安装
 
+### 正式版
+
+* [Chrome浏览器插件](https://chrome.google.com/webstore/detail/pihsiu/lbfkjikmajfblaomhgdbdombjkgaeico)
+
 ### 开发版
 
-1. 下载插件 [这里](https://github.com/fractal-platform/pihsiu/releases)
+1. 下载插件 [这里](https://github.com/fractal-platform/pihsiu/releases)，下载zip文件并解压。
 2. 打开Chrome浏览器，进入插件管理页：[chrome://extensions](chrome://extensions)
-3. 打开**开发者模式**，把插件文件拖入即可
+3. 打开**开发者模式**，点击**加载已解压的扩展程序**，选择解压后的文件夹即可。
 
 ![alt open_dev_mode](https://raw.githubusercontent.com/fractal-platform/pihsiu/master/docs/open_dev_mode.png)
 
