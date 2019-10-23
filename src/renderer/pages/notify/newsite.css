@@ -1,0 +1,68 @@
+.approveBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  margin: 10px 32px;
+}
+
+.approveBox ::before {
+  border-top: 2px dashed #cdd1e4;
+  content: '';
+  margin: 0 auto;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 65%;
+  z-index: -1;
+}
+
+.approveBox h1 {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 8px 0 0;
+  color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.approveCheck {
+  width: 30px;
+  height: 30px;
+  background: #f5f5f9 no-repeat;
+  margin-top: 19px;
+}
+
+.approveImg {
+  width: 64px;
+  height: 64px;
+  background: #f5f5f9;
+}
+
+.approveContent h1 {
+  color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.approveContent p {
+  padding: 0 10px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  color: #7c808e;
+}
+
+.btnGroup {
+  border-top: 1px solid #d2d8dd;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

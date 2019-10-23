@@ -1,0 +1,15 @@
+{
+  "name": "pihsiu-electron-app",
+  "version": "1.0.0",
+  "description": "Pihsiu Wallet for Fractal Blockchain",
+  "main": "dist/main/main.js",
+  "author": {
+    "name": "fractal",
+    "email": "fractal@fractalblock.com"
+  },
+  "dependencies": {
+    "electron-config": "^1.0.0",
+    "electron-is": "^2.4.1",
+    "electron-log": "^2.2.14"
+  }
+}

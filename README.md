@@ -22,34 +22,47 @@ The goal of Pihsiu is to make it as easy as possible to talk with Fractal.
 
 ## 📦 Install
 
-### Released Version
+### Browser extension
 
-* for [chrome browser](https://chrome.google.com/webstore/detail/pihsiu/lbfkjikmajfblaomhgdbdombjkgaeico)
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](https://github.com/fractal-platform/pihsiu/releases)<br> Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](https://github.com/fractal-platform/pihsiu/releases)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](https://chrome.google.com/webstore/detail/pihsiu/lbfkjikmajfblaomhgdbdombjkgaeico)<br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](https://github.com/fractal-platform/pihsiu/releases)<br>Opera | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/brave/brave_48x48.png" alt="brave" width="24px" height="24px"/>](https://support.brave.com/hc/en-us/articles/360017909112-How-can-I-add-extensions-to-Brave-)<br>Brave |
+| --------- | --------- | --------- | --------- | --------- |
+| Dev| Dev| Release| Dev| Release|
 
-### Dev Version
+## 🖥 Try Dev Version
 
-1. Get chrome extension [here](https://github.com/fractal-platform/pihsiu/releases), download the zip file.
-2. Open your Chrome Browser and goto [chrome://extensions](chrome://extensions)
-3. Open **development mode** and unzip the extension.zip file, click **Load unpacked** and select the unzipped folder.
+Get extension [here](https://github.com/fractal-platform/pihsiu/releases), download the zip file for specific browser.
+
+### chrome/opera
+
+1. Open your Chrome Browser and goto [chrome://extensions](chrome://extensions)
+2. Open **development mode** and unzip the extension.zip file, click **Load unpacked** and select the unzipped folder.
 
 ![alt open_dev_mode](https://raw.githubusercontent.com/fractal-platform/pihsiu/master/docs/open_dev_mode.png)
 
-### F&Q
+### firefox
 
-#### 1. If you got `Package is invalid: "CRX_REQUIRED_PROOF_MISSING"` problem while install dev version:
+install a node package `we-ext`
 
-try these steps several times:
+follow this [tutorial](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Getting_started_with_web-ext) to test and build
 
-* Remove Pihsiu add-on in Chrome
-* Close chrome ( Make sure all chrome process has quit already )
-* Start chrome, and go into chrome://extensions, reopen development mode and drag crx to chrome.
+the basic steps can be described as follows:
+```bash
+$ cd /path/to/dist/extensions
+$ web-ext run
+$ web-ext build
+$ web-ext sign --api-key=$AMO_JWT_ISSUER --api-secret=$AMO_JWT_SECRET 
+```
 
-## 🖥 Usage
+## ⌨️ Development
 
-Demo video
+```shell script
+$ git clone https://github.com/fractal-platform/pihsiu.git
+$ cd pihsiu
+$ yarn -i
+$ yarn run watch:ext
+```
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=1z4pTe0aMqs&feature=youtu.be">
-    <img width="200" src="https://raw.githubusercontent.com/fractal-platform/pihsiu/master/docs/youtube.png">
-  </a>
-</p>
+After all that, you will get dev extension in `dist/extension` and then use chrome load unpacked extension in dev mode. [Try dev version](#try-dev-version) contains the details. 
+
+## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+

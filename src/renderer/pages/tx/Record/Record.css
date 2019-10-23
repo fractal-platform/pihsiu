@@ -1,0 +1,45 @@
+.circle {
+  margin: -26px auto;
+  width: 53px;
+  height: 53px;
+  background: #fff;
+  border-radius: 26px;
+}
+
+.amountBox {
+  margin-top: 26px;
+  border-bottom: 1.2px solid #d8d8d8;
+}
+
+.amount {
+  color: var(--title-font-color);
+  font-size: 1.25rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actions {
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.detail-list :global .am-list-item {
+  background: #f5f5f9;
+  padding-left: 0px;
+}
+
+.detail-list :global .am-list-item .am-list-line .am-list-content {
+  font-size: 14px;
+  color: var(--title-font-color);
+}
+
+.detail-list :global .am-list-item .am-list-line .am-list-brief {
+  font-size: 12px;
+}

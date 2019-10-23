@@ -1,0 +1,22 @@
+.container {
+  min-width: var(--min-width);
+}
+
+.title {
+  color: var(--title-font-color);
+}
+
+.subtitle {
+  color: var(--title-font-color);
+}
+
+.description {
+  color: var(--help-font-color);
+}
+
+.warning {
+  color: var(--warn-font-color);
+  display: block;
+  padding: 5px;
+  border: solid 1px var(--warn-font-color);
+}

@@ -1,0 +1,9 @@
+{
+    "appName": {
+        "message": "Pihsiu",
+        "description": "The name of application"
+    },
+    "appDescription": {
+        "message": "An Official Fractal Wallet in your browser."
+    }
+}

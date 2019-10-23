@@ -1,0 +1,53 @@
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.divider {
+  margin: 15px 0;
+  width: 100px !important;
+  min-width: 100px !important;
+}
+
+.infoTab {
+  padding: 10px 0;
+}
+
+.infoTabHeader {
+  font-size: 16px;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+.infoTabContent {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #9b9b9b;
+  text-align: center;
+}
+
+.design {
+  font-size: 16px;
+  color: #9b9b9b;
+  margin-bottom: 15px;
+}
+
+.infoLinkHeader {
+  margin: 20px 0 0 0;
+  padding: 0 0 5px 0;
+  color: #4d4d4d;
+  font-size: 16px;
+}
+
+.infoLink {
+  padding: 5px 0;
+}
+
+.infoLinkText {
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #037dd6;
+  line-height: 1.25rem;
+  cursor: pointer;
+  background-color: transparent;
+}

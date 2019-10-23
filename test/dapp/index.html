@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Foolish Dapp</title>
+  <link href="https://csdnimg.cn/public/favicon.ico" rel="shortcut icon">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+</head>
+
+<body>
+<div id="root">
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <h1>我是一个foolish Dapp</h1>
+    <button id="txBtn">发交易</button>
+  </div>
+</div>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+</script>
+<script>
+  if (window.ruban === undefined) {
+    window.alert('貔貅插件没有启动');
+  } else {
+    $('#txBtn').on('click', function(e) {
+      console.log('start send');
+      var account = window.ruban.wallet.accounts[0];
+      window.ruban.fra.sendTransaction({ from: account.address, to: account.address, value: 1, gas: 400 * 10000 })
+        .on('error', function(error) {
+          console.log('index.html::', error);
+        })
+        .on('transactionHash', function(transactionHash) {
+          console.log(transactionHash);
+        })
+        .on('receipt', function(receipt) {
+          console.log(receipt);
+        })
+        .on('confirmation', function(confirmationNumber, receipt) {
+          console.log('react confirmationNumber: ' + confirmationNumber);
+          console.log(receipt);
+          if (confirmationNumber == 2) {
+            alert('success');
+          }
+        })
+        .catch();
+    });
+  }
+</script>
+</body>
+
+</html>

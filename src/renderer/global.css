@@ -1,0 +1,31 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --min-width: 357px;
+  --title-font-color: #06004d;
+  --help-font-color: #757575;
+  --warn-font-color: #ffc107;
+}
+
+.miniContainer {
+  min-width: var(--min-width);
+  overflow-y: auto;
+}
+
+.divider {
+  display: block;
+  clear: both;
+  border: 0;
+  border-top: 1px solid #d7d7d7;
+  width: 100%;
+  min-width: 100%;
+  height: 1px;
+}

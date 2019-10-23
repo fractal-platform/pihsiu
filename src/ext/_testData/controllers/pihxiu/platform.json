@@ -1,0 +1,35 @@
+[
+  {
+    "type": "platform/openWindow",
+    "payload": [
+      {
+        "url": "https://baidu.com"
+      }
+    ]
+  },
+  {
+    "type": "platform/saveAbi",
+    "payload": [
+      "0x001",
+      "{ \"name\":\"John\", \"age\":30, \"city\":\"New York\"}"
+    ]
+  },
+  {
+    "type": "platform/loadAbi",
+    "payload": [
+      "0x001"
+    ]
+  },
+  {
+    "type": "platform/loadAbi",
+    "payload": [
+      "data"
+    ]
+  },
+  {
+    "type": "platform/openExtensionInBrowser",
+    "payload": [
+      "/settings/general"
+    ]
+  }
+]

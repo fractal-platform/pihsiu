@@ -1,0 +1,60 @@
+.circle {
+  position: absolute;
+  top: -18px;
+  left: 110px;
+  width: 53px;
+  height: 53px;
+  background: #fff;
+  border-radius: 26px;
+}
+
+.card :global .am-modal-content {
+  overflow: unset;
+  padding-top: 0px;
+}
+
+.card :global .am-modal-content :global .am-modal-close {
+  top: 15px;
+  cursor: pointer;
+}
+
+.card :global .am-modal-header {
+  background: #4b4185;
+  padding: 40px 0 20px 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.headInfo {
+  margin: 15px 0 0 0;
+  color: #fff;
+}
+
+.name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 20px;
+}
+
+.address {
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.address div {
+  display: inline-block;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.privateKey {
+    width: 90%;
+    padding-right: 15px;
+    border: solid 1px #ddd;
+}

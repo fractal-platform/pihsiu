@@ -1,0 +1,61 @@
+[
+  {
+    "type": "transaction/wipeTransactions",
+    "payload": [
+      "0x4d2366824c45b2fe103af44f92bd7b5af4d297c9"
+    ]
+  },
+  {
+    "description": "链没有启动",
+    "expection": "Connection refused or URL couldn't be resolved",
+    "status": "failed",
+    "type": "transaction/addAndSendTransaction",
+    "payload": [
+      {
+        "from": "0x4d2366824c45b2fe103af44f92bd7b5af4d297c9",
+        "to": "0x4d2366824c45b2fe103af44f92bd7b5af4d297c9",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "description": "账户没有钱",
+    "expection": "Confirmation Timeout && 2 notifications",
+    "status": "timeout->failed",
+    "type": "transaction/addAndSendTransaction",
+    "payload": [
+      {
+        "from": "0x4d2366824c45b2fe103af44f92bd7b5af4d297c9",
+        "to": "0x4d2366824c45b2fe103af44f92bd7b5af4d297c9",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "description": "from不在keystore里",
+    "expection": "Transaction from address isn't valid for this account;Maybe address is not lowerCased",
+    "status": "will not dump to disk",
+    "type": "transaction/addAndSendTransaction",
+    "payload": [
+      {
+        "from": "0x1111111111111111111111111111111111111111",
+        "to": "0x4d2366824c45b2fe103af44f92bd7b5af4d297c9",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "description": "send 2 transaction with same nonce",
+    "expection": "known element",
+    "status": "failed",
+    "type": "transaction/addAndSendTransaction",
+    "payload": [
+      {
+        "from": "0x4d2366824c45b2fe103af44f92bd7b5af4d297c9",
+        "to": "0x4d2366824c45b2fe103af44f92bd7b5af4d297c9",
+        "value": 1,
+        "nonce": 15
+      }
+    ]
+  }
+]

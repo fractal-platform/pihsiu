@@ -1,0 +1,50 @@
+.card {
+  background: #4b4185;
+  padding-bottom: unset;
+}
+
+.card :global .am-card-header .am-card-header-content {
+  overflow: hidden;
+}
+
+.card :global .am-card-header .am-card-header-content .paper {
+  min-width: 25px;
+}
+
+.cardTitle {
+  margin-left: 5px;
+  font-size: 0.8em;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardFooterLeft {
+  border-top: 1px solid #a7a7a7 !important;
+  border-right: 1px solid #a7a7a7 !important;
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+  height: 35px;
+}
+
+.cardFooterRight {
+  border-top: 1px solid #a7a7a7 !important;
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
+  border-bottom-left-radius: unset;
+  height: 35px;
+}
+
+.whiteFont {
+  color: #fff;
+}
+
+.greyFont {
+  color: #a7a7a7;
+}
+
+.extraInfo {
+  margin-top: 3px;
+  font-size: 12px;
+}

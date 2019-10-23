@@ -1,0 +1,9 @@
+.title {
+  font-size: 16px;
+  color: var(--title-font-color);
+}
+
+.description {
+  font-size: 14px;
+  color: var(--help-font-color);
+}

@@ -24,32 +24,47 @@
 
 ## 📦 安装
 
-### 正式版
+### 浏览器插件
 
-* [Chrome浏览器插件](https://chrome.google.com/webstore/detail/pihsiu/lbfkjikmajfblaomhgdbdombjkgaeico)
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](https://github.com/fractal-platform/pihsiu/releases)<br> Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](https://github.com/fractal-platform/pihsiu/releases)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](https://chrome.google.com/webstore/detail/pihsiu/lbfkjikmajfblaomhgdbdombjkgaeico)<br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](https://github.com/fractal-platform/pihsiu/releases)<br>Opera | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/brave/brave_48x48.png" alt="brave" width="24px" height="24px"/>](https://support.brave.com/hc/en-us/articles/360017909112-How-can-I-add-extensions-to-Brave-)<br>Brave |
+| --------- | --------- | --------- | --------- | --------- |
+| Dev| Dev| Release| Dev| Release|
 
-### 开发版
+## 🖥 尝试开发版
 
-1. 下载插件 [这里](https://github.com/fractal-platform/pihsiu/releases)，下载zip文件并解压。
-2. 打开Chrome浏览器，进入插件管理页：[chrome://extensions](chrome://extensions)
-3. 打开**开发者模式**，点击**加载已解压的扩展程序**，选择解压后的文件夹即可。
+下载插件 [这里](https://github.com/fractal-platform/pihsiu/releases)，下载zip文件并解压。
+
+### chrome/opera
+
+1. 打开Chrome浏览器，进入插件管理页：[chrome://extensions](chrome://extensions)
+2. 打开**开发者模式**，点击**加载已解压的扩展程序**，选择解压后的文件夹即可。
 
 ![alt open_dev_mode](https://raw.githubusercontent.com/fractal-platform/pihsiu/master/docs/open_dev_mode.png)
 
-### F&Q
+### firefox
 
-#### 1. 如果你遇到`Package is invalid: "CRX_REQUIRED_PROOF_MISSING"`类似的问题
+安装node package `we-ext`
 
-删除貔貅插件，彻底关掉Chrome进程，重新上面的开发版安装过程。这是由于Chrome76版本后引入的安全限制引起。
+这里是文档 [tutorial](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Getting_started_with_web-ext)
 
-或者你可以下载插件的zip包使用解压缩工具解压，使用chrome://extensions 中的`加载已解压的扩展程序`按钮加载。
+主要的操作步骤：
 
-## 🖥 使用
+```bash
+$ cd /path/to/dist/extensions
+$ web-ext run
+$ web-ext build
+$ web-ext sign --api-key=$AMO_JWT_ISSUER --api-secret=$AMO_JWT_SECRET 
+```
 
-Demo视频
+## ⌨️ 开发
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=1z4pTe0aMqs&feature=youtu.be">
-    <img width="200" src="https://raw.githubusercontent.com/fractal-platform/pihsiu/master/docs/youtube.png">
-  </a>
-</p>
+```shell script
+$ git clone https://github.com/fractal-platform/pihsiu.git
+$ cd pihsiu
+$ yarn -i
+$ yarn run watch:ext
+```
+
+## 🤝 贡献代码 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+热烈欢迎通过issues提供建议或通过pull request提供代码

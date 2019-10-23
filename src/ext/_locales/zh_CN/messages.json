@@ -1,0 +1,9 @@
+{
+    "appName": {
+        "message": "貔貅钱包",
+        "description": "The name of application"
+    },
+    "appDescription": {
+        "message": "Fractal官方浏览器钱包."
+    }
+}

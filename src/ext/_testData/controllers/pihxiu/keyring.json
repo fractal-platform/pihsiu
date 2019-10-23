@@ -1,0 +1,34 @@
+[
+  {
+    "type": "accounts/exportAccount",
+    "payload": [
+      "0x4d2366824c45b2fe103af44f92bd7b5af4d297c9"
+    ]
+  },
+  {
+    "type": "accounts/createNewVaultAndKeychain",
+    "payload": [
+      "12345678"
+    ]
+  },
+  {
+    "type": "accounts/getAndVerifySeedPhrase"
+  },
+  {
+    "type": "accounts/submitPassword",
+    "payload": [
+      "12345678"
+    ]
+  },
+  {
+    "type": "accounts/addNewAccount",
+    "payload": []
+  },
+  {
+    "type": "accounts/createNewVaultAndRestore",
+    "payload": [
+      "99999999",
+      "visa once tumble exercise grief say capital glimpse wagon rocket sunny dragon"
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "name": "__MSG_appName__",
+  "short_name": "__MSG_appName__",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "author": "Fractal Platform",
+  "description": "__MSG_appDescription__",
+  "icons": {
+    "16": "images/logo16.png",
+    "32": "images/logo32.png",
+    "48": "images/logo48.png",
+    "128": "images/logo128.png"
+  },
+  "default_locale": "en",
+  "permissions": ["http://*/*", "notifications", "activeTab", "declarativeContent", "storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/logo16.png",
+      "38": "images/logo32.png"
+    },
+    "default_title": "__MSG_appName__",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "file://*/*",
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "contentscript.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}

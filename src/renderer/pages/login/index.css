@@ -1,0 +1,49 @@
+.login-container {
+  background-color: #fff;
+  background-image: url('../../assets/background.png');
+  background-size: 357px 600px;
+  display: flex;
+  align-self: stretch;
+  justify-content: center;
+  flex: 1 0 auto;
+  height: 100%;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 357px;
+  font-weight: 400;
+  color: #aeaeae;
+}
+
+.login .header {
+  margin-top: 290px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--title-font-color);
+  margin-bottom: 22px;
+}
+
+.login .decription {
+  text-align: center;
+}
+
+.login .decription div {
+  font-size: 16px;
+}
+
+.login_logo {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  margin-top: 30px;
+}
+
+.login_logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

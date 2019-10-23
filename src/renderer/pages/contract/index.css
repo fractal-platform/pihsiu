@@ -1,0 +1,39 @@
+.title {
+  font-size: 14px;
+  color: var(--title-font-color);
+}
+
+.listTitle {
+  padding: 15px 15px 9px 15px;
+  font-size: 14px;
+  color: var(--title-font-color);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.gasSlider {
+  box-sizing: border-box;
+  padding: 22px 0 22px 0;
+}
+
+.extraGroup {
+  font-size: 20px;
+  color: #fff;
+}
+
+.extraBtn {
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+
+.extraBtn:hover {
+  opacity: 0.5;
+}
+
+.extraGroup :global .am-flexbox-item {
+  margin-left: 0 !important;
+}
