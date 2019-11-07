@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 8.0
+  - lts/*
 
 install:
   - yarn -i
@@ -8,6 +8,7 @@ install:
 script:
   - yarn run lint
   - yarn run build:ext
+  - yarn run release
   - cd release && zip -r brave.zip ./brave/* && zip -r chrome.zip ./chrome/* && zip -r edge.zip ./edge/* && zip -r firefox.zip ./firefox/* && zip -r opera.zip ./opera/*
 
 deploy:
