@@ -10,6 +10,8 @@
 
 Connect you to fantastic Fractal Block Chain.
 
+[![Join the chat at https://gitter.im/fractal-platform/pihsiu](https://badges.gitter.im/fractal-platform/pihsiu.svg)](https://gitter.im/fractal-platform/pihsiu?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/fractal-platform/pihsiu.svg?branch=master)](https://travis-ci.org/fractal-platform/pihsiu)
+
 </div>
 
 English | [简体中文](./README-zh_CN.md)
@@ -64,5 +66,5 @@ $ yarn run watch:ext
 
 After all that, you will get dev extension in `dist/extension` and then use chrome load unpacked extension in dev mode. [Try dev version](#try-dev-version) contains the details. 
 
-## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Join the chat at https://gitter.im/fractal-platform/pihsiu](https://badges.gitter.im/fractal-platform/pihsiu.svg)](https://gitter.im/fractal-platform/pihsiu?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 

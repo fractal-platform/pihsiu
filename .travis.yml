@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - 8.0
+
+install:
+  - yarn -i
+
+script:
+  - yarn run lint
+  - yarn run build:ext
+  - cd release && zip -r brave.zip ./brave/* && zip -r chrome.zip ./chrome/* && zip -r edge.zip ./edge/* && zip -r firefox.zip ./firefox/* && zip -r opera.zip ./opera/*
+
+deploy:
+  provider: releases
+  api_key: "${travis_ci_apikey}"
+  file:
+    - "release/brave.zip"
+    - "release/chrome.zip"
+    - "release/edge.zip"
+    - "release/firefox.zip"
+    - "release/opera.zip"
+  skip_cleanup: true
+  overwrite: true
+  on:
+    tags: true
