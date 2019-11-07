@@ -10,6 +10,8 @@
 
 联通Dapp与Fractal世界
 
+[![Join the chat at https://gitter.im/fractal-platform/pihsiu](https://badges.gitter.im/fractal-platform/pihsiu.svg)](https://gitter.im/fractal-platform/pihsiu?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/fractal-platform/pihsiu.svg?branch=master)](https://travis-ci.org/fractal-platform/pihsiu)
+
 </div>
 
 简体中文 | [English](./README.md)
