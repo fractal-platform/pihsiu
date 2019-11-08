@@ -13,6 +13,7 @@
   <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <h1>我是一个foolish Dapp</h1>
     <button id="txBtn">发交易</button>
+    <button id="sign">签名</button>
   </div>
 </div>
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
@@ -42,6 +43,11 @@
           }
         })
         .catch();
+    });
+    $('#sign').on('click', function(e) {
+      console.log('start sign');
+      var account = window.ruban.wallet.accounts[0];
+      account.sign("hello world").then(console.log);
     });
   }
 </script>
