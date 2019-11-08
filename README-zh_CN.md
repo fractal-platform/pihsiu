@@ -69,4 +69,4 @@ $ yarn run watch:ext
 
 ## 🤝 贡献代码 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-热烈欢迎通过issues提供建议或通过pull request提供代码
+热烈欢迎通过issues提供建议或通过pull request提供代码，在你开始前请参考我们的[贡献指南](https://www.fractalblock.com/docs/pihsiu/contributes-cn)

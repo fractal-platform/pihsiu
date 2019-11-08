@@ -68,3 +68,4 @@ After all that, you will get dev extension in `dist/extension` and then use chro
 
 ## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 
+We are very welcome to your contributing, and please read our [help document](https://www.fractalblock.com/docs/pihsiu/contributes) before you start. 
