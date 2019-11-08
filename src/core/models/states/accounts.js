@@ -1,4 +1,5 @@
 import { normalize } from 'eth-sig-util';
+import log from 'loglevel';
 
 export default {
   namespace: 'accounts',
@@ -12,6 +13,12 @@ export default {
   },
   reducers: {
     update: (state, action) => {
+      if(typeof action.isSeedWordsSaved === 'boolean' && !action.isSeedWordsSaved){
+        log.error('Try to reset isSeedWordsSaved to false, very strange, the action is ', action);
+        // force isSeedWordsSaved to be true
+        action.isSeedWordsSaved = true;
+      }
+
       return {
         ...state,
         ...action,
