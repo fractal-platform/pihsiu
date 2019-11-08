@@ -9,6 +9,7 @@ export default class DappRouter {
     this.routes = {
       'transaction/sendRawTransaction': services.tx.sendRawTxFromDapp.bind(services.tx),
       'transaction/addTxFromDapp': services.tx.addTxFromDapp.bind(services.tx),
+      'account/sign': services.accounts.sign.bind(services.accounts),
     };
   }
 

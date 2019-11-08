@@ -14,15 +14,24 @@ function addressToPk(address) {
 }
 
 class Account {
-  constructor(address, wallet) {
+  constructor(address, wallet, bc) {
     this.address = address;
     this.privateKey = addressToPk(address);
     this.minerKeys = [];
     this.wallet = wallet;
+    this.bc = bc;
   }
 
   sign(data) {
-    throw new Error('Pihsiu not support account.sign method yet');
+    return new Promise((resolve, reject) => {
+      this.bc
+        .sendAsync({
+          type: 'account/sign',
+          payload: [data],
+        })
+        .then(msg => resolve(msg.payload))
+        .catch(err => reject(err));
+    });
   }
 
   toKeystore(password, options = {}) {
@@ -33,8 +42,11 @@ class Account {
     throw new Error('Pihsiu not support account.from method');
   }
 
-  static fromPrivateKey(privateKey, minerKeys = [], wallet) {
-    return new Account(pkToAddress(privateKey), wallet);
+  static fromPrivateKey(privateKey, minerKeys = [], wallet, bc) {
+    if (!bc) {
+      throw new Error('Pihsiu not support account.from method');
+    }
+    return new Account(pkToAddress(privateKey), wallet, bc);
   }
 
   static fromKeystore(keystore, password, nonStrict, wallet) {

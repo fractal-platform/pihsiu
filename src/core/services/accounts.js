@@ -306,4 +306,15 @@ export default class AccountService extends StatableEmitter {
     this.models.setState('accounts/setSelectedAddress', accounts[0]);
     this.models.setState('accounts/updateNickName', { address: accounts[0], name });
   }
+
+  async sign(data) {
+    const { selectedAddress } = this.models.state.accounts;
+
+    await this.addPrivateKeyToWallet(selectedAddress);
+    const account = this.ruban.wallet.get(selectedAddress);
+    if (!account) {
+      console.error('ruban cannot find selectedAddress');
+    }
+    return account.sign(data);
+  }
 }

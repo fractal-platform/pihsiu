@@ -101,7 +101,7 @@ const wallet = new Proxy(ruban.fra.wallet, {
     if (key === 'generate') {
       return (privateKey, wallet) => {
         if (isPihsiuPk(privateKey)) {
-          return new Account(pkToAddress(privateKey), wallet);
+          return new Account(pkToAddress(privateKey), wallet, bc);
         } else {
           return target.generate(privateKey, wallet);
         }
@@ -110,7 +110,7 @@ const wallet = new Proxy(ruban.fra.wallet, {
     if (key === 'add') {
       return account => {
         if (isString(account)) {
-          account = Account.fromPrivateKey(account, [], target);
+          account = Account.fromPrivateKey(account, [], target, bc);
         }
         target.add(account);
       };
