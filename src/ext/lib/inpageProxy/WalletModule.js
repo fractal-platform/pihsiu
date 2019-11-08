@@ -23,7 +23,6 @@ class Account {
   }
 
   sign(data) {
-    console.log('walletmodule sign');
     return new Promise((resolve, reject) => {
       this.bc
         .sendAsync({
@@ -33,7 +32,6 @@ class Account {
         .then(msg => resolve(msg.payload))
         .catch(err => reject(err));
     });
-    // throw new Error('Pihsiu not support account.sign method yet');
   }
 
   toKeystore(password, options = {}) {
@@ -45,6 +43,9 @@ class Account {
   }
 
   static fromPrivateKey(privateKey, minerKeys = [], wallet, bc) {
+    if (!bc) {
+      throw new Error('Pihsiu not support account.from method');
+    }
     return new Account(pkToAddress(privateKey), wallet, bc);
   }
 
