@@ -5,22 +5,13 @@ export default {
   state: {
     providers: [
       {
-        type: 'testnet',
-        displayName: 'TestNet Main',
-        rpcUrl: 'http://rpc1.testnet.fractalblock.com:8545/rpc',
-        scanUrl: 'http://scan.testnet.fractalblock.com:8081',
+        type: 'mainnet',
+        displayName: 'Main Net',
+        rpcUrl: 'http://35.170.127.58:8545/rpc',
+        scanUrl: 'http://35.170.127.58:8080/',
         faucetUrl: 'http://token.testnet.fractalblock.com:8081',
-        chainId: 2,
+        chainId: 1,
         color: netColor.GREEN,
-      },
-      {
-        type: 'testnet',
-        displayName: 'TestNet Backup',
-        rpcUrl: 'http://rpc2.testnet.fractalblock.com:8545/rpc',
-        scanUrl: 'http://scan.testnet.fractalblock.com:8081',
-        faucetUrl: 'http://token.testnet.fractalblock.com:8081',
-        chainId: 2,
-        color: netColor.BLUE,
       },
       {
         type: 'localhost',

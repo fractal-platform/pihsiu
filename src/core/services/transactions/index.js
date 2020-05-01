@@ -64,7 +64,7 @@ export default class TransactionService extends StatableEmitter {
         });
         this._setTxStatus(txId, 'timeout');
       }
-    }, 1000 * 60 * 8);
+    }, 1000 * 60 * 10);
     this.once(`${txId}:finished`, finishedTxMeta => {
       clearTimeout(timeoutId);
     });
@@ -147,7 +147,16 @@ export default class TransactionService extends StatableEmitter {
     this.ruban.fra
       .sendTransaction(txParams)
       .on('error', error => {
-        log.debug(error);
+        log.error(error);
+        if(JSON.stringify(error.error) === "{}"){
+          log.warn("when query tx message, some network error happened.");
+          if(this.getTx(txId).status === 'confirmed') {
+            this._setTxStatus(txId, 'receipt');
+          } else {
+            this.setTxStatusFailed(txId, {m: "Connection broken, check scan for tx result."});
+          }
+          return;
+        }
         if (error.message && error.message.startsWith('Node error:')) {
           // looks like: Node error: {"message": "xxxxx", "code": -21000}
           try {

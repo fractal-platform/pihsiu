@@ -55,6 +55,8 @@ export default class BootEngine extends EventEmitter {
     this.ruban = new Ruban(this.provider, null, {
       defaultGasPrice: 1,
       defaultGas: 9000000000,
+      transactionBlockTimeout: 600,
+      transactionConfirmationBlocks: 6,
       textEncoder,
       textDecoder,
     });
